@@ -18,9 +18,6 @@ vendor/
 # Ignore les fichiers de dépendances gérées par NPM
 node_modules/
 
-# Ignore les fichiers de sauvegarde de la base de données
-*.sql
-
 # Ignore les fichiers de log
 *.log
 
