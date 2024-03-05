@@ -1,0 +1,28 @@
+# Ignore les fichiers et répertoires générés par l'IDE Visual Studio Code
+.vscode/
+
+# Ignore les fichiers de configuration locaux
+.env
+
+# Ignore les fichiers de configuration de l'éditeur
+*.sublime-project
+*.sublime-workspace
+
+# Ignore les fichiers de sauvegarde
+*.bak
+*.swp
+
+# Ignore les fichiers de dépendances gérées par Composer
+vendor/
+
+# Ignore les fichiers de dépendances gérées par NPM
+node_modules/
+
+# Ignore les fichiers de sauvegarde de la base de données
+*.sql
+
+# Ignore les fichiers de log
+*.log
+
+# Ignore les fichiers de cache
+.cache/
