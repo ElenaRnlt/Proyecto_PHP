@@ -3,14 +3,14 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-03-2024 a las 10:01:53
+-- Tiempo de generación: 12-03-2024 a las 08:56:46
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
- 
+
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `articulo` (
   `id` int(11) NOT NULL,
+  `nombre_art` varchar(40) NOT NULL,
   `id_vendedor` int(11) NOT NULL,
   `categoria` varchar(30) NOT NULL,
   `precio` float NOT NULL,
@@ -127,6 +128,34 @@ ALTER TABLE `usuario`
   ADD UNIQUE KEY `user_name` (`user_name`),
   ADD UNIQUE KEY `email` (`email`),
   ADD UNIQUE KEY `dni` (`dni`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `articulo`
+--
+ALTER TABLE `articulo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `articulo_favorito`
+--
+ALTER TABLE `articulo_favorito`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `tipo_articulo`
+--
+ALTER TABLE `tipo_articulo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restricciones para tablas volcadas
