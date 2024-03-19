@@ -1,0 +1,23 @@
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-item {
+    float: left;
+    width: 200px; /* Ajustez selon vos besoins */
+    margin-right: 20px; /* Espace entre les vignettes */
+    border: 1px black;
+    border-radius: 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+body
+{
+    background-color: aqua;
+}
